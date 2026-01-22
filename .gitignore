@@ -24,3 +24,10 @@ output
 *.njsproj
 *.sln
 *.sw?
+
+# Large media files (should be stored elsewhere or use Git LFS)
+src/assets/videos/
+src/assets/docs/
+*.mp4
+*.pdf
+*.zip
