@@ -10,9 +10,9 @@ import ContactInfo from '../../components/Contact/ContactInfo';
 import Header from '../../components/PageHeader';
 import ComunicationIcon from '../../../../assets/icons/pressIcon.svg';
 import PressRegistrationForm from './components/PressRegistrationForm';
-import BrandManualPDF from '../../../../assets/docs/MANUAL DE ID VISUAL CBC.pdf';
-import LogoKitZip from '../../../../assets/docs/logo-kit.zip';
-import { useDownload } from '../../hooks/useDonwload';
+// Arquivos removidos do Git (muito grandes)
+// import BrandManualPDF from '../../../../assets/docs/MANUAL DE ID VISUAL CBC.pdf';
+// import LogoKitZip from '../../../../assets/docs/logo-kit.zip';
 import { useGetGallery } from '../../hooks/use-get-gallery';
 
 const ComunicationPage = () => {
@@ -20,14 +20,16 @@ const ComunicationPage = () => {
   const navigate = useNavigate();
   // const { slug } = useParams<{ slug: string }>();
   const [locked, setLocked] = useState(false);
-  const { downloadFile } = useDownload();
+  // const { downloadFile } = useDownload();
 
   const handleDownloadBrandManual = () => {
-    downloadFile(BrandManualPDF, 'MANUAL_DE_ID_VISUAL_CBC.pdf');
+    // TODO: Implementar download do manual (arquivo removido do Git)
+    console.warn('Manual de ID Visual não disponível (arquivo removido do Git)');
   };
 
   const handleDownloadLogoKit = () => {
-    downloadFile(LogoKitZip, 'logo-kit.zip');
+    // TODO: Implementar download do logo kit (arquivo removido do Git)
+    console.warn('Logo Kit não disponível (arquivo removido do Git)');
   };
 
   if (pageLoading) {
