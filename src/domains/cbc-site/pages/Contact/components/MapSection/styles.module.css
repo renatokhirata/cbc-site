@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  max-height: 300;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.markerIcon {
+  position: relative;
+}
+
+.infoOverlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-43.4%);
+  z-index: 1000;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.marker {
+  position: relative;
+  font-size: 32px;
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.marker:hover {
+  transform: scale(1.2);
+}
